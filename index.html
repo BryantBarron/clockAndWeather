@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock and Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="split clockSide">
+        <div class="digitalTime">
+            <p class="d-hour"></p>
+                <span class="h-text">:</span>
+            <p class="d-minutes"></p>
+                <span class="m-text">:</span>
+            <p class="d-seconds"></p>
+            
+        </div>
+        <div class="calendar">
+            <div class="date">
+                <p id="calendarDate">
+                    <p id="month"></p>
+                    <p id="day"></p>
+                        <span id="dateSeperator">,</span>
+                    <p id="year"></p>
+                </p>
+            </div>
+            <p id="dayOfWeek"></p>
+        </div>
+        <div class="analogClock">
+            <div class="clockFace">
+                <div class="hourHand">
+                    <div class="hour" id="hour"></div>
+                </div>
+                <div class="minHand">
+                    <div class="minute" id="minute"></div>
+                </div>
+                <div class="secHand">
+                    <div id="second" class="second"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="split weatherSide">
+
+    </div>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

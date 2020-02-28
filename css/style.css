@@ -1,0 +1,77 @@
+/*color template
+#142850
+#27496d
+#0c7b93
+#00a8cc
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top:20px;
+}
+
+.clockSide {
+    left: 0; 
+    background-color: #142850;
+}
+
+.digitalTime {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 95px;
+    align-items: center;
+    font-size: 60px;
+    color: #00a8cc;
+}
+
+.digitalTime p{
+    margin: 0;
+}
+.digitalTime span{
+    font-size: 1.9rem;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.calendar {
+    width: 100;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #00a8cc;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+}
+
+.date p{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+}
+
+#dayOfWeek {
+    display: flex;
+    justify-content: center;
+    color: #0c7b93;
+    text-align: center;
+    margin: 0;
+}
+
+
+.weatherSide{
+    right: 0;
+    background-color: #white;
+}
