@@ -16,6 +16,8 @@ getDate = () => {
     if(nonMilitaryTime < 10){
       console.log(nonMilitaryTime);
       document.querySelector('.d-hour').innerHTML = ("0" + nonMilitaryTime);
+    }else{
+      document.querySelector('.d-hour').innerHTML = nonMilitaryTime;
     }
   } else {
     document.querySelector('.d-hour').innerHTML = hour;
@@ -42,9 +44,9 @@ setInterval(getDate, 1000);
 window.addEventListener('load', () => {
   let long;
   let lat;
-  let temperatureDescription = document.querySelector('.temperature-description');
-  let temperatureDegree = document.querySelector('.temperature-degree');
-  let locationTimeZone = document.querySelector('.location-timeZone');
+  let temperatureDescription = document.querySelector('.temp-summary');
+  let temperatureDegree = document.querySelector('.temp-degree');
+  let locationTimeZone = document.querySelector('.timeZone');
   console.log("hello");
 
   if(navigator.geolocation){

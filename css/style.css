@@ -34,9 +34,6 @@ body {
     color: #00a8cc;
 }
 
-.digitalTime p{
-    margin: 0;
-}
 .digitalTime span{
     font-size: 1.9rem;
     padding-left: 3px;
@@ -73,5 +70,44 @@ body {
 
 .weatherSide{
     right: 0;
-    background-color: white;
+    background-color: #142850;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #4371f1;
 }
+
+.location, .temperature {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+}
+.location p, h1{
+    margin: 0px;
+}
+
+.location p{
+    padding: 15px;
+
+}
+
+.temperature {
+    flex-direction: column;
+    font-weight: bold;
+}
+
+
+.temp-description {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.temp-description span{
+    padding: 10px;
+    font-size: 30px;
+}
+
+
