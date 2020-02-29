@@ -106,6 +106,7 @@ body {
 .temp-description span{
     padding: 10px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 
